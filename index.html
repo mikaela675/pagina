@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MODAARTE - TIENDA DE ROPA</title>
+  <link rel="stylesheet" href="diseño.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">moda arte</div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('productos')">Productos</a></li>
+        <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        <li><a href="#" onclick="mostrarSeccion('referencias')">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="seccion hero activo">
+    <div class="inicio-contenido">
+      <div class="texto-inicio">
+        <h1>MODAARTE</h1>
+        <p class="subtitulo-inicio">Ropa de dama</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80" alt="Moda ropa" />
+    </div>
+  </section>
+
+  <section id="productos" class="seccion oculto">
+    <h2>Nuestra Colección</h2>
+    <div class="galeria">
+
+      <!-- Producto 1 -->
+      <div class="producto fade-in">
+        <a href="https://imgbb.com/">
+          <img src="https://i.ibb.co/hx8RnY0w/chaqueta.jpg" alt="chaqueta" border="0" />
+        </a>
+        <h3>Chaqueta biker PU negra</h3>
+        <p class="descripcion">Diseño natural atrevido.</p>
+        <p class="precio">$45.00</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+        <select class="tallas">
+          <option value="" disabled selected>Selecciona talla</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto fade-in">
+        <a href="https://ibb.co/rGj1DSTK">
+          <img src="https://i.ibb.co/279fGQm0/conjunto.jpg" alt="conjunto" border="0" />
+        </a>
+        <h3>Conjunto de Dos Piezas</h3>
+        <p class="descripcion">Color y expresión en una prenda.</p>
+        <p class="precio">$30.00</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+        <select class="tallas">
+          <option value="" disabled selected>Selecciona talla</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <select class="colores">
+          <option value="" disabled selected>Selecciona color</option>
+          <option>Crema</option>
+          <option>Marrón</option>
+          <option>Negro</option>
+          <option>Celeste</option>
+          <option>Rosa</option>
+        </select>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto fade-in">
+        <a href="https://imgbb.com/">
+          <img src="https://i.ibb.co/WvtBm3K0/pant.jpg" alt="pant" border="0" />
+        </a>
+        <h3>Pantalón Ancho de Mezclilla</h3>
+        <p class="descripcion">Edición artística exclusiva.</p>
+        <p class="precio">$38.00</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+        <select class="tallas">
+          <option value="" disabled selected>Selecciona talla</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="producto fade-in">
+        <a href="https://imgbb.com/">
+          <img src="https://i.ibb.co/Y7W14V62/vestido.jpg" alt="vestido" border="0" />
+        </a>
+        <h3>Vestido Corto Floreado</h3>
+        <p class="descripcion">Perfecta para el estilo casual.</p>
+        <p class="precio">$55.00</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+        <select class="tallas">
+          <option value="" disabled selected>Selecciona talla</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <select class="colores">
+          <option value="" disabled selected>Selecciona color</option>
+          <option>Rosa</option>
+          <option>Celeste</option>
+          <option>Naranja</option>
+          <option>Rojo</option>
+          <option>Negro</option>
+          <option>Blanco</option>
+        </select>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="producto fade-in">
+        <a href="https://ibb.co/35b98Lzs">
+          <img src="https://i.ibb.co/kVTsrW1y/falda.jpg" alt="falda" border="0" />
+        </a>
+        <h3>Falda Short</h3>
+        <p class="descripcion">Ideal para días activos sin perder el toque chic.</p>
+        <p class="precio">$42.00</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+        <select class="tallas">
+          <option value="" disabled selected>Selecciona talla</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <select class="colores">
+          <option value="" disabled selected>Selecciona color</option>
+          <option>Negro</option>
+          <option>Marrón</option>
+          <option>Blanco</option>
+        </select>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="producto fade-in">
+        <a href="https://imgbb.com/">
+          <img src="https://i.ibb.co/wr4tkVqF/trajes.jpg" alt="trajes" border="0" />
+        </a>
+        <br />
+        <a target="_blank" href="https://es.imgbb.com/">tamaño de una imagen en html</a>
+        <br />
+        <h3>Traje de Baño</h3>
+        <p class="descripcion">Estilo fresco y vibrante para días de sol. Ideal para lucir en la playa o la piscina.</p>
+        <p class="precio">$35.00</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+        <select class="tallas">
+          <option value="" disabled selected>Selecciona talla</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <select class="colores">
+          <option value="" disabled selected>Selecciona color</option>
+          <option>Rojo</option>
+          <option>Celeste</option>
+          <option>Verde</option>
+          <option>Crema</option>
+          <option>Negro</option>
+          <option>Blanco</option>
+        </select>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion oculto">
+    <h2>Contáctanos</h2>
+    <form id="formularioContacto">
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="referencias" class="seccion oculto">
+    <h2>Opiniones de Clientes</h2>
+    <div class="testimonios">
+      <div class="testimonial fade-in">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana R." />
+        <blockquote>
+          “Me encantó el diseño y la atención. Las prendas tienen una calidad excelente, y cada detalle está cuidado con mucho amor y dedicación. Sin duda, volveré a comprar.”
+       <h2> Ana R. </h2>
+        </blockquote>
+      </div>
+      <div class="testimonial fade-in">
+  <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Laura Gutiérrez" />
+  <blockquote>
+    “Recomendado 100%. Encontré justo lo que buscaba para renovar mi guardarropa con estilo único y moderno. ¡La experiencia fue increíble!”
+    <h2>Laura G.</h2>
+  </blockquote>
+  </div>
+      <div class="testimonial fade-in">
+        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Carla M." />
+        <blockquote>
+          “Ropa con personalidad propia. La calidad y diseño son impresionantes. La atención al cliente es rápida y amable, lo que hace que comprar sea muy cómodo.”
+          <h2> Carla M. </h2>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; © 2025 MODAARTE - Todos los contenidos son propiedad exclusiva</p>
+  </footer>
+
+  <script src="matematica.js"></script>
+</body>
+</html>

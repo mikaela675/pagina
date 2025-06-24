@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* BARRA SUPERIOR FIJA CELESTE */
+header {
+  background-color: #00aaff;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-family: 'Playfair Display', serif;
+  text-transform: lowercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffe600;
+}
+
+/* SECCIÓN HERO (INICIO) con contenido lado a lado */
+.hero {
+  background: none;
+  padding: 6em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inicio-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-inicio {
+  max-width: 45%;
+}
+
+.inicio-contenido h1 {
+  font-size: 5em;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+.subtitulo-inicio {
+  font-size: 1.5em;
+  color: #555;
+  font-weight: 500;
+}
+
+.inicio-contenido img {
+  max-width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* SECCIONES GENERALES */
+.seccion {
+  padding: 4em 2em;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* GALERÍA DE PRODUCTOS */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.producto {
+  width: 300px;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: transform 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto:hover img,
+.producto.zoom img {
+  transform: scale(1.15);
+}
+
+.producto h3 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: #0077aa;
+}
+
+.descripcion {
+  font-size: 0.95em;
+  margin: 0.3em 0;
+  color: #666;
+}
+
+.precio {
+  font-weight: bold;
+  color: #222;
+  margin-top: 0.5em;
+  transition: transform 0.3s;
+}
+
+.precio:hover {
+  transform: scale(1.3);
+  color: #00aaff;
+}
+
+.btn-carrito {
+  margin-top: 0.5em;
+  padding: 0.6em 1em;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-carrito:hover {
+  background-color: #008ecc;
+}
+
+/* Selector de tallas (dropdown) */
+.tallas {
+  margin-top: 0.7em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+.activo {
+  display: block;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 2em auto 0;
+}
+
+input, textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0077aa;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005577;
+}
+
+/* TESTIMONIOS: cuadros con foto y estrellas */
+.testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.testimonial {
+  background: #f0f8ff;
+  border-radius: 12px;
+  padding: 1.5em;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  text-align: left;
+}
+
+.testimonial img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  color: #333;
+  margin: 0;
+  flex-grow: 1;
+  position: relative;
+  border-left: none;
+  padding-left: 0;
+}
+
+.testimonial blockquote footer {
+  margin-top: 0.8em;
+  font-weight: bold;
+  color: #0077aa;
+}
+
+.testimonial blockquote footer::before {
+  content: '★★★★★';
+  color: #ffb400;
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #0077aa;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+  margin-top: 2em;
+}
+
+/* ANIMACIONES SCROLL */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
